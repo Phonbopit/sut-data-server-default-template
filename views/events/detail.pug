@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+  .event-detail
+    .columns
+      .column.is-12.has-text-centered
+        h2 Event Detail
+          a(href='/', class='button button-new') List
+    .columns
+      .column.is-12
+        .event-box
+          p
+            strong Name :
+          p Name
+    .columns
+      .column.is-12
+        .event-box
+          p
+            strong Description :
+          p Description
+    .columns
+      .column.is-12
+        .event-box
+          p
+            strong Location :
+          p Location
+    .columns
+      .column.is-12
+        .field.is-grouped.is-grouped-centered
+          p.control
+            button.button.is-danger.is-delete Delete
+          p.control
+            a(href='', class='button is-info') Edit

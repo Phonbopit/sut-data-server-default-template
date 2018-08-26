@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  .columns
+    .column.is-12.has-text-centered
+      h2 Edit event
+  .columns
+    form(method='POST', action='/events', class='column is-6 is-offset-3')
+      .field
+        label.label Name
+        .control
+          input(class='input', type='text', placeholder='SUT Data Server', name='name', value=event.name)
+      .field
+        label.label Description
+        .control
+          input(class='input', type='textarea', placeholder='MongoDB + Node.js + Pug Tutorial', name='description', value=event.description)
+      .field
+        label.label Location
+        .control
+          input(class='input', type='text', placeholder='Playground F1', name='location', value=event.location)
+      .field
+        .control
+          button.button.is-primary Submit

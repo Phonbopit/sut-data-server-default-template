@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  .event-list
+    .columns
+      .column.is-12.has-text-centered
+        h2 Event List
+          a(href='/events/new', class='button is-link button-new') Create new
+    each event in events
+      .columns
+        .card.column.is-12
+          span Event Name 
+          a(class='button', href='') Detail
