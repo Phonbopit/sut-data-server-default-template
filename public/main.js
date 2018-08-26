@@ -1,4 +1,5 @@
 $(function() {
+
   $('.is-delete').on('click', function() {
     $.ajax({
       type: 'DELETE',
@@ -7,4 +8,6 @@ $(function() {
       window.location.href = '/'
     })
   })
+
 });
+
